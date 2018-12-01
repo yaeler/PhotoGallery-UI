@@ -1,0 +1,26 @@
+<p>
+  album works! - {{alnumName}}  
+</p>
+
+<ul class="container">
+  <li>
+    <strong>title:</strong>  {{albumName}} </li>
+</ul>
+
+<!-- <ul>
+    <li *ngFor="let photo of photos">{{photo.Username}}</li>
+  </ul> -->
+
+  <div *ngFor="let photo of photos">
+      <div class="photo">
+        <div>{{photo.Username}}</div>
+        <img [src]="photo.Url">
+      </div>
+    </div>
+
+
+
+  <!-- <div class="photo">
+    <div>photo.title </div>
+    <img [src]="photo.url">
+</div> -->
